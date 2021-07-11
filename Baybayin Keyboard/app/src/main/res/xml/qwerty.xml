@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
-    android:keyWidth="15%p"
-    android:horizontalGap="10px"
-    android:verticalGap="10px"
+    android:keyWidth="20%p"
+    android:horizontalGap="8dp"
+    android:verticalGap="8dp"
     android:keyHeight="40dp"
-    android:background="@drawable/key_background"
-    android:shadowRadius="0.0">
-
+    android:background="@drawable/key_background">
     <Row>
         <Key android:keyLabel="1"
             android:keyEdgeFlags="left"
@@ -65,16 +63,15 @@
         <Key android:keyLabel="\u1734" android:codes="05940"/> <!--pamudpod-->
         <Key android:keyLabel="\u1710" android:codes="05904"/> <!--sa-->
         <Key android:keyLabel="\u1711" android:codes="05905"/> <!--ha-->
-        <Key android:keyLabel="\u232B" android:keyWidth="20%p" android:keyEdgeFlags="right" android:isRepeatable="true" android:codes="-5"/> <!--backspace-->
+        <Key android:keyLabel="\u232B" android:keyWidth="25%p" android:keyEdgeFlags="right" android:isRepeatable="true" android:codes="-5"/> <!--backspace-->
     </Row>
 
     <Row android:rowEdgeFlags="bottom">
         <Key android:keyLabel="\u1735" android:keyWidth="10%p" android:codes="05941"/> <!--/-->
-        <Key android:keyLabel="\u2328" android:keyWidth="15%p" android:codes="-777" android:onClick="switchKeyboard"/> <!--change keyboard-->
-        <Key android:keyLabel="\u2699" android:keyWidth="15%p" android:codes="-778"/> <!--open settings-->
-        <Key android:keyLabel="\u170A\u170C\u1714\u170A\u170C\u1712\u1708\u1714" android:keyWidth="40%p" android:isRepeatable="true" android:codes="32"/> <!--space-->
+        <Key android:keyLabel="\u2328" android:keyWidth="13%p" android:codes="-777" android:onClick="switchKeyboard"/> <!--change keyboard-->
+        <Key android:keyLabel="\u2699" android:keyWidth="13%p" android:codes="-778"/> <!--open settings-->
+        <Key android:keyLabel="\u170A\u170C\u1714\u170A\u1z70C\u1712\u1708\u1714" android:keyWidth="40%p" android:isRepeatable="true" android:codes="32"/> <!--space-->
         <Key android:keyLabel="\u1736" android:codes="05942" android:keyWidth="10%p"/> <!--//-->
         <Key android:keyLabel="\u23CE" android:keyWidth="16%p" android:keyEdgeFlags="right" android:codes="-4"/> <!--done/enter-->
     </Row>
-
 </Keyboard>
