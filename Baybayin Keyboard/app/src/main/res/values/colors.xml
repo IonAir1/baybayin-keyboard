@@ -7,4 +7,5 @@
     <color name="keyboard_background_color">#fff</color>
     <color name="keyboard_divider">#ddd</color>
     <color name="keyboard_pressed">#242424</color>
+    <color name="key_text">#111</color>
 </resources>
