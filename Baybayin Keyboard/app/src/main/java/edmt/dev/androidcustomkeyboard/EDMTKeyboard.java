@@ -153,7 +153,6 @@ import android.view.inputmethod.InputMethodManager;
     }
 
 
-
     public void switchKeyboard() {
         InputMethodManager imeManager = (InputMethodManager) getApplicationContext().getSystemService(INPUT_METHOD_SERVICE);
         imeManager.showInputMethodPicker();

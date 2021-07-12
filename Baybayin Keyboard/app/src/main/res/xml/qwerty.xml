@@ -31,38 +31,38 @@
     </Row>
 
     <Row>
-        <Key android:keyLabel="\u1703" android:keyEdgeFlags="left" android:codes="05891"/> <!--ka-->
-        <Key android:keyLabel="\u1704" android:codes="05892"/> <!--ga-->
-        <Key android:keyLabel="\u1705" android:codes="05893"/> <!--nga-->
+        <Key android:keyLabel="\u1703 Ka" android:keyEdgeFlags="left" android:codes="05891"/> <!--ka-->
+        <Key android:keyLabel="\u1704 Ga" android:codes="05892"/> <!--ga-->
+        <Key android:keyLabel="\u1705 Nga" android:codes="05893"/> <!--nga-->
         <Key android:keyLabel="\u1712" android:codes="05906"/> <!--ei-->
-        <Key android:keyLabel="\u1706" android:codes="05894"/> <!--ta-->
-        <Key android:keyLabel="\u1707" android:codes="05895"/> <!--da-->
-        <Key android:keyLabel="\u1708" android:codes="05896"/> <!--na-->
-        <Key android:keyLabel="\u1707\u0335" android:keyEdgeFlags="right" android:keyTextSize="50dp" android:labelTextSize="5dp" android:keyOutputText="\u1707\u0335"/> <!--ra-->
+        <Key android:keyLabel="\u1706 Ta" android:codes="05894"/> <!--ta-->
+        <Key android:keyLabel="\u1707 Da" android:codes="05895"/> <!--da-->
+        <Key android:keyLabel="\u1708 Na" android:codes="05896"/> <!--na-->
+        <Key android:keyLabel="\u1707\u0335 Ra" android:keyEdgeFlags="right" android:keyTextSize="50dp" android:labelTextSize="5dp" android:keyOutputText="\u1707\u0335"/> <!--ra-->
 
     </Row>
 
     <Row>
-        <Key android:keyLabel="\u1709" android:keyEdgeFlags="left" android:codes="05897"/> <!--pa-->
-        <Key android:keyLabel="\u170A" android:codes="05898"/> <!--ba-->
-        <Key android:keyLabel="\u170B" android:codes="05899"/> <!--ma-->
+        <Key android:keyLabel="\u1709 Pa" android:keyEdgeFlags="left" android:codes="05897"/> <!--pa-->
+        <Key android:keyLabel="\u170A Ba" android:codes="05898"/> <!--ba-->
+        <Key android:keyLabel="\u170B Ma" android:codes="05899"/> <!--ma-->
         <Key android:keyLabel="\u1713" android:codes="05907"/> <!--ou-->
         <Key android:keyLabel="𑄳" android:keyOutputText="𑄳"/> <!--chakma virama-->
-        <Key android:keyLabel="\u170C" android:codes="05900"/> <!--ya-->
-        <Key android:keyLabel="\u170E" android:codes="05902"/> <!--la-->
-        <Key android:keyLabel="\u170F" android:codes="05903" android:keyEdgeFlags="right"/> <!--wa-->
+        <Key android:keyLabel="\u170C Ya" android:codes="05900"/> <!--ya-->
+        <Key android:keyLabel="\u170E La" android:codes="05902"/> <!--la-->
+        <Key android:keyLabel="\u170F Wa" android:codes="05903" android:keyEdgeFlags="right"/> <!--wa-->
 
     </Row>
 
     <Row>
-        <Key android:keyLabel="\u1700" android:keyEdgeFlags="left" android:codes="05888"/> <!--a-->
-        <Key android:keyLabel="\u1701" android:codes="05889" android:name="ei"/> <!--EI-->
-        <Key android:keyLabel="\u1702" android:codes="05890"/> <!--OU-->
+        <Key android:keyLabel="\u1700 A" android:keyEdgeFlags="left" android:codes="05888"/> <!--a-->
+        <Key android:keyLabel="\u1701 EI" android:codes="05889" android:name="ei"/> <!--EI-->
+        <Key android:keyLabel="\u1702 OU" android:codes="05890"/> <!--OU-->
         <Key android:keyLabel="\u1714" android:codes="05908"/> <!--krus-->
 
         <Key android:keyLabel="\u1734" android:codes="05940"/> <!--pamudpod-->
-        <Key android:keyLabel="\u1710" android:codes="05904"/> <!--sa-->
-        <Key android:keyLabel="\u1711" android:codes="05905"/> <!--ha-->
+        <Key android:keyLabel="\u1710 SA" android:codes="05904"/> <!--sa-->
+        <Key android:keyLabel="\u1711 HA" android:codes="05905"/> <!--ha-->
         <Key android:keyLabel="\u232B" android:keyWidth="25%p" android:keyEdgeFlags="right" android:isRepeatable="true" android:codes="-5"/> <!--backspace-->
     </Row>
 
