@@ -56,7 +56,7 @@
 
     <Row>
         <Key android:keyLabel="\u1700" android:keyEdgeFlags="left" android:codes="05888"/> <!--a-->
-        <Key android:keyLabel="\u1701" android:codes="05889"/> <!--EI-->
+        <Key android:keyLabel="\u1701" android:codes="05889" android:name="ei"/> <!--EI-->
         <Key android:keyLabel="\u1702" android:codes="05890"/> <!--OU-->
         <Key android:keyLabel="\u1714" android:codes="05908"/> <!--krus-->
 

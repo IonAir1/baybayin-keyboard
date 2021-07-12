@@ -1,6 +1,7 @@
-package edmt.dev.androidcustomkeyboard;
+ package edmt.dev.androidcustomkeyboard;
 
-import android.content.Context;
+ import android.content.Context;
+import android.content.Intent;
 import android.inputmethodservice.InputMethodService;
 import android.inputmethodservice.Keyboard;
 import android.inputmethodservice.KeyboardView;
@@ -10,7 +11,7 @@ import android.view.View;
 import android.view.inputmethod.InputConnection;
 import android.view.inputmethod.InputMethodManager;
 
-public class EDMTKeyboard extends InputMethodService implements KeyboardView.OnKeyboardActionListener {
+ public class EDMTKeyboard extends InputMethodService implements KeyboardView.OnKeyboardActionListener {
 
     Context context;
 
@@ -23,6 +24,28 @@ public class EDMTKeyboard extends InputMethodService implements KeyboardView.OnK
     //Press Ctrl+O
     public static final int SWITCH_KEYBOARD = -777;
     public static final int OPEN_SETTINGS = -778;
+
+    //ArrayList<String> katinig = new ArrayList<String>() {
+    //    {
+    //        //add("ᜀ");
+    //        add("ᜊ");
+    //        add("ᜃ");
+    //        add("ᜇ");
+    //        //add("ᜁ");
+    //        add("ᜄ");
+    //       add("ᜑ");
+    //        add("ᜎ");
+    //        add("ᜋ");
+    //        add("ᜈ");
+    //        add("ᜅ");
+    //        //add("ᜂ");
+    //        add("ᜉ");
+    //        add("ᜐ");
+    //        add("ᜆ");
+    //        add("ᜏ");
+    //        add("ᜌ");
+    //    }
+    //};
 
 
     @Override
@@ -37,8 +60,9 @@ public class EDMTKeyboard extends InputMethodService implements KeyboardView.OnK
 
     @Override
     public void onPress(int i) {
-
     }
+
+
 
     @Override
     public void onRelease(int i) {
@@ -76,6 +100,12 @@ public class EDMTKeyboard extends InputMethodService implements KeyboardView.OnK
                         ic.deleteSurroundingText(1,0);
                         openSettings();
                     };
+                    //Button button = keyboard.;
+                   // if (katinig.contains(code)) {
+                    //    //ei.setBackgroundColor(ei.getContext().getResources().getColor(R.color.red));
+                    //} else {
+                        //ei.setBackgroundColor(ei.getContext().getResources().getColor(R.color.red));
+                    //}
         }
 
     }
@@ -133,6 +163,8 @@ public class EDMTKeyboard extends InputMethodService implements KeyboardView.OnK
     }
 
     public void openSettings() {
-
+            Intent intent = new Intent(this, settings.class);
+            startActivity(intent);
     }
+
 }
