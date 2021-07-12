@@ -10,6 +10,8 @@ import android.view.View;
 import android.view.inputmethod.InputConnection;
 import android.view.inputmethod.InputMethodManager;
 
+import java.util.ArrayList;
+
 public class EDMTKeyboard extends InputMethodService implements KeyboardView.OnKeyboardActionListener {
 
     Context context;
@@ -18,6 +20,41 @@ public class EDMTKeyboard extends InputMethodService implements KeyboardView.OnK
     private Keyboard keyboard;
 
     private  boolean isCaps = false;
+
+    char pubCode;
+    String currWord = "";
+    ArrayList<String> diacritics = new ArrayList<String>() {
+        {
+            add("ᜒ");
+            add("ᜓ");
+            add("᜔");
+            add("᜴");
+            add("\uD804\uDF33");
+            add(" ");
+        }
+    };
+    ArrayList<String> titik = new ArrayList<String>() {
+        {
+            //add("ᜀ");
+            add("ᜊ");
+            add("ᜃ");
+            add("ᜇ");
+            //add("ᜁ");
+            add("ᜄ");
+            add("ᜑ");
+            add("ᜎ");
+            add("ᜋ");
+            add("ᜈ");
+            add("ᜅ");
+            //add("ᜂ");
+            add("ᜉ");
+            add("ᜐ");
+            add("ᜆ");
+            add("ᜏ");
+            add("ᜌ");
+        }
+    };
+
 
 
     //Press Ctrl+O
@@ -66,9 +103,9 @@ public class EDMTKeyboard extends InputMethodService implements KeyboardView.OnK
                 break;
                 default:
                     char code = (char)i;
-                    if(Character.isLetter(code) && isCaps)
-                        code = Character.toUpperCase(code);
+                    pubCode = code;
                     ic.commitText(String.valueOf(code),1);
+
                     if (String.valueOf(code).equals("ﳷ")) {
                         ic.deleteSurroundingText(1,0);
                         switchKeyboard();
@@ -101,7 +138,20 @@ public class EDMTKeyboard extends InputMethodService implements KeyboardView.OnK
 
     @Override public void onText(CharSequence text) {
         InputConnection ic = getCurrentInputConnection();
-        ic.commitText(text, 0);
+
+        String texto = currWord + text;
+        currWord = texto;
+
+        if (titik.contains(String.valueOf(texto))) {
+            currWord = String.valueOf(text);
+            texto = currWord;
+            ic.setComposingText(String.valueOf(texto), 1);
+        }
+
+        if (diacritics.contains(String.valueOf(text))) {
+            ic.commitText(String.valueOf(texto),1);
+            currWord = "";
+        }
     }
 
     @Override
