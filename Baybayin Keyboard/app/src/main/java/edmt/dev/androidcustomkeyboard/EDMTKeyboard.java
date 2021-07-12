@@ -49,7 +49,7 @@ import android.view.inputmethod.InputMethodManager;
 
 
     @Override
-    public View onCreateInputView() {
+    public View onCreateInputView() { //sets up the keyboard
         kv = (KeyboardView)getLayoutInflater().inflate(R.layout.keyboard,null);
         keyboard = new Keyboard(this,R.xml.qwerty);
         kv.setKeyboard(keyboard);
@@ -70,33 +70,27 @@ import android.view.inputmethod.InputMethodManager;
     }
 
     @Override
-    public void onKey(int i, int[] ints) {
+    public void onKey(int i, int[] ints) { //makes the simple keys on keyboard work
 
         InputConnection ic = getCurrentInputConnection();
         playClick(i);
         switch (i)
         {
-            case Keyboard.KEYCODE_DELETE:
+            case Keyboard.KEYCODE_DELETE: //backspace
                 ic.deleteSurroundingText(1,0);
 
-            break;
-            case Keyboard.KEYCODE_SHIFT:
-                isCaps = !isCaps;
-                keyboard.setShifted(isCaps);
-                kv.invalidateAllKeys();
-                break;
-            case Keyboard.KEYCODE_DONE:
+            case Keyboard.KEYCODE_DONE: //exit keyboard / enter
                 ic.sendKeyEvent(new KeyEvent(KeyEvent.ACTION_DOWN,KeyEvent.KEYCODE_ENTER));
                 break;
+
                 default:
                     char code = (char)i;
-                    if(Character.isLetter(code) && isCaps)
-                        code = Character.toUpperCase(code);
-                    ic.commitText(String.valueOf(code),1);
-                    if (String.valueOf(code).equals("ﳷ")) {
+                    ic.commitText(String.valueOf(code),1); //types out the key
+
+                    if (String.valueOf(code).equals("ﳷ")) { //special key for chagne keyboard button
                         ic.deleteSurroundingText(1,0);
                         switchKeyboard();
-                    } else if (String.valueOf(code).equals("ﳶ")) {
+                    } else if (String.valueOf(code).equals("ﳶ")) { //special key for open settings
                         ic.deleteSurroundingText(1,0);
                         openSettings();
                     };
@@ -112,7 +106,7 @@ import android.view.inputmethod.InputMethodManager;
 
     private void playClick(int i) {
 
-        AudioManager am = (AudioManager)getSystemService(AUDIO_SERVICE);
+        AudioManager am = (AudioManager)getSystemService(AUDIO_SERVICE); //audio
         switch(i)
         {
             case 32:
@@ -129,7 +123,7 @@ import android.view.inputmethod.InputMethodManager;
         }
     }
 
-    @Override public void onText(CharSequence text) {
+    @Override public void onText(CharSequence text) { //types out the Ra and Chakma virama/big virama
         InputConnection ic = getCurrentInputConnection();
         ic.commitText(text, 0);
     }
