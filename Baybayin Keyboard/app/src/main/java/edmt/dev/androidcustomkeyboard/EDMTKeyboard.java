@@ -58,6 +58,7 @@ import android.view.inputmethod.InputMethodManager;
 
     }
 
+
     @Override
     public void onPress(int i) {
     }
@@ -78,6 +79,7 @@ import android.view.inputmethod.InputMethodManager;
         {
             case Keyboard.KEYCODE_DELETE: //backspace
                 ic.deleteSurroundingText(1,0);
+                break;
 
             case Keyboard.KEYCODE_DONE: //exit keyboard / enter
                 ic.sendKeyEvent(new KeyEvent(KeyEvent.ACTION_DOWN,KeyEvent.KEYCODE_ENTER));
@@ -161,3 +163,28 @@ import android.view.inputmethod.InputMethodManager;
     }
 
 }
+
+ //class MKeyboardView extends KeyboardView {
+//
+//     public MKeyboardView(Context context, AttributeSet attrs) {
+//         super(context, attrs);
+//         System.out.println("AAAAAAA");
+//     }
+//
+//     @Override
+//     public void onDraw(Canvas canvas) {
+ //        super.onDraw(canvas);
+
+//         System.out.println("BBBBBBBB");
+
+ //        Paint paint = new Paint();
+  //       paint.setTextSize(15);
+  //       paint.setColor(Color.GRAY);
+
+    //     List<Keyboard.Key> keys = getKeyboard().getKeys();
+   //      for(Keyboard.Key key: keys) {
+   //          System.out.println("CCCCCCCCC");
+    //         canvas.drawText("1", key.x + (key.width/2), key.y + 25, paint);
+      //   }
+  //   }
+// }
