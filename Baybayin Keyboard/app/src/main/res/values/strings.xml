@@ -38,4 +38,11 @@
     <string name="showBaybayinGuide">Show Baybayin Guide</string>
     <string name="showNumbers">Show Number Row</string>
 
+    <!--Virama-->
+    <string name="empty">None</string>
+    <string name="standardKrus">Krus</string>
+    <string name="malakingKrus">Malaking Krus</string>
+    <string name="pamudpod">Pamudpod</string>
+    <string name="sinawali">Sinawali</string>
+    
 </resources>

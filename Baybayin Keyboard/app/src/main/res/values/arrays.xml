@@ -18,12 +18,4 @@
         <item name="pamudpod">Pamudpod</item>
         <item name="sinawali">Sinawali</item>
     </string-array>
-
-    <array name="viramaValues">
-        <item name="empty">0</item>
-        <item name="standardKrus">1</item>
-        <item name="malakingKrus">2</item>
-        <item name="pamudpod">3</item>
-        <item name="sinawali">4</item>
-    </array>
 </resources>
