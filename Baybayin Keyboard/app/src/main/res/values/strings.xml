@@ -9,4 +9,33 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="title">Settings</string>
+    <string name="title_activity_preferences">preferences</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+
+
+    <!--Options-->
+    <string name="virama">Virama Options</string>
+    <string name="virama1">Virama 1</string>
+    <string name="virama2">Virama 2</string>
+    <string name="virama3">Virama 3</string>
+    <string name="showKeyBorders">Show Keyborders</string>
+    <string name="showBaybayinGuide">Show Baybayin Guide</string>
+    <string name="showNumbers">Show Number Row</string>
+
 </resources>

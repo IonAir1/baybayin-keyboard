@@ -1,0 +1,29 @@
+<resources>
+    <!-- Reply Preference -->
+    <string-array name="reply_entries">
+        <item>Reply</item>
+        <item>Reply to all</item>
+    </string-array>
+
+    <string-array name="reply_values">
+        <item>reply</item>
+        <item>reply_all</item>
+    </string-array>
+
+    <!--Viramas-->
+    <string-array name="viramas">
+        <item name="empty">None</item>
+        <item name="standardKrus">Krus</item>
+        <item name="malakingKrus">Malaking Krus</item>
+        <item name="pamudpod">Pamudpod</item>
+        <item name="sinawali">Sinawali</item>
+    </string-array>
+
+    <array name="viramaValues">
+        <item name="empty">0</item>
+        <item name="standardKrus">1</item>
+        <item name="malakingKrus">2</item>
+        <item name="pamudpod">3</item>
+        <item name="sinawali">4</item>
+    </array>
+</resources>
