@@ -2,7 +2,8 @@ Baybayin ULTRA Keyboard
 
 This project is under development
 This project is licensed as Copy Left Creative Commons Share Alike 4.0:
-https://creativecommons.org/licenses/by-sa/4.0/
+https://creativecommons.org/licenses/by-sa/4.0/legalcode
+
 
 Road Map / Git Kraken Boards:
 https://app.gitkraken.com/glo/board/YObvx0EZ3QASHHcj
